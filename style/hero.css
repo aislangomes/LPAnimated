@@ -1,0 +1,105 @@
+section.hero {
+  max-width: 80rem;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  margin-inline: auto;
+
+  h1 div {
+    display: inline-block;
+    overflow: hidden;
+    height: 5rem;
+    width: min-content;
+    vertical-align: bottom;
+  }
+
+  h1 span:nth-child(1),
+  h1 span:nth-child(4) {
+    color: var(--snitap-sky-mid);
+  }
+  h1 span:nth-child(2),
+  h1 span:nth-child(5) {
+    color: var(--snitap-joy-mid);
+  }
+  h1 span:nth-child(3) {
+    color: var(--snitap-leaf-mid);
+  }
+
+  h1 span {
+
+    display: block;
+    animation: slideUp 6s infinite ease-out
+
+  }
+}
+
+@keyframes slideUp {
+  0%, 22% {
+    transform: translateY(0rem);
+  }
+  25% {
+    transform: translateY(calc(-5rem - 36px));
+  }
+
+  27% {
+    transform: translateY(calc(-5rem + 20px));
+  }
+
+  29% {
+    transform: translateY(calc(-5rem - 10px));
+  }
+
+  31% {
+    transform: translateY(calc(-5rem + 5px));
+  }
+  32% {
+    transform: translateY(calc(-5rem - 2px));
+  }  
+  33%, 55% {
+    transform: translateY(-5rem);
+  }
+
+  58% {
+    transform: translateY(calc(-10rem - 36px));
+  }
+
+  60% {
+    transform: translateY(calc(-10rem + 20px));
+  }
+
+  62% {
+    transform: translateY(calc(-10rem - 10px));
+  }
+
+  64% {
+    transform: translateY(calc(-10rem + 5px));
+  }
+  65% {
+    transform: translateY(calc(-10rem - 2px));
+  } 
+
+  66%, 88% {
+    transform: translateY(-10rem);
+  }
+
+  91% {
+    transform: translateY(calc(-15rem - 36px));
+  }
+
+  94% {
+    transform: translateY(calc(-15rem + 20px));
+  }
+
+  96% {
+    transform: translateY(calc(-15rem - 10px));
+  }
+
+  98% {
+    transform: translateY(calc(-15rem + 5px));
+  }
+  99% {
+    transform: translateY(calc(-15rem - 2px));
+  } 
+  100% {
+    transform: translateY(-15rem);
+  }
+}
