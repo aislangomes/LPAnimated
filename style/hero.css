@@ -134,6 +134,46 @@ section.hero {
   }
 }
 
+@media (width <= 80em) {
+  section.hero {
+    flex-direction: column-reverse;
+
+    & h1 {
+      font-size: 2rem;
+
+      & div {
+        height: 2.5rem;
+      }
+    }
+
+    & .buttons {
+      flex-direction: column-reverse;  
+    }
+    &>:nth-child(2){
+      height: 19.5rem;
+
+      & img[src*="stars-1"] {
+        max-width: 4rem;
+        top: 25%;
+        z-index: 0;
+        opacity: 0;
+        transform: translateX(400%);
+        animation: slideIn 2s 800ms ease both, appear 100ms 800ms both;
+      }
+  
+      & img[src*="stars-2"] {
+        max-width: 1.6rem;
+        right: 0;
+        bottom: 35%;
+  
+        transform: translateX(400%);
+        animation: slideIn 2.2s 800ms ease both;
+      }
+    }
+  }
+
+}
+
 @keyframes slideIn {
   50% {
     transform: translate(-20px);

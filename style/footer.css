@@ -99,3 +99,16 @@ footer {
     }
   }
 }
+
+@media (width <= 80rem){
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+
+    & nav {
+      flex-direction: column;
+    }
+  }
+}

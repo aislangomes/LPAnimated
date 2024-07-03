@@ -100,11 +100,53 @@ section.gallery{
 
     & > img {
       width: 2rem;
+      height: auto
       aspect-ratio: 1/1;
       object-fit: cover;
       border-radius: 50%;
     }
   }
+}
+
+@media (width <= 80rem){
+  section.gallery {
+    & .content{
+      display: flex;
+      flex-direction: column;
+    }
+
+    & .content{
+      gap: 1.5rem;
+    }
+
+    & header span {
+      font-size: .875rem;
+    }
+
+    & header h2 {
+      font-size: 1.5rem;
+    }
+
+    & figure {
+      
+      & img {
+        height: 16rem;
+        width: auto;
+      }
+    }
+
+    & figcaption {
+      & > img {
+        width: 1.5rem;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+  }
+
 }
 
 @keyframes image-appears{
