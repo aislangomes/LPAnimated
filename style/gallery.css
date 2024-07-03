@@ -34,7 +34,7 @@ section.gallery{
     overflow: hidden;
     line-height: 0;
 
-    animation: image-appears ease forwards;
+    animation: image-appears linear both;
     animation-timeline: view();
     animation-range: 100px 300px;
 
